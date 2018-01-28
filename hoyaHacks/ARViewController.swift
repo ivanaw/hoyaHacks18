@@ -82,10 +82,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
 
     // MARK: - ARSCNViewDelegate
     
@@ -114,11 +110,29 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             let transform : matrix_float4x4 = closestResult.worldTransform
             let worldCoord : SCNVector3 = SCNVector3Make(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
             
-            // Create 3D Text
-            let node : SCNNode = createNewBubbleParentNode(latestPrediction)
-            sceneView.scene.rootNode.addChildNode(node)
-            node.position = worldCoord
+        // Create Card
+            var cardNode: SCNNode = createCard()
+            var textNode: SCNNode = createTextNode(text: latestPrediction)
+            sceneView.scene.rootNode.addChildNode(cardNode)
+            sceneView.scene.rootNode.addChildNode(textNode)
         }
+    }
+    
+    func createCard() -> SCNNode {
+        let cardNode: SCNNode = SCNNode()
+        let card = SCNBox(width: 0.15, height: 0.1, length: 0.01, chamferRadius: 0.005)
+        card.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.6)
+        cardNode.geometry = card
+        cardNode.position.y += 0.09
+        return cardNode
+    }
+    func createTextNode(text: String)-> SCNNode {
+        let text = SCNText(string: text, extrusionDepth: 4.0)
+        text.firstMaterial?.diffuse.contents = UIColor.white
+        text.font = UIFont(name: "Arial", size: 35)
+        
+        let textNode = SCNNode(geometry: text)
+        return textNode
     }
     
     func createNewBubbleParentNode(_ text : String) -> SCNNode {
