@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HoyaHacks.xcscheme</key>
+		<key>CoreML in ARKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>hoyaHacks.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>

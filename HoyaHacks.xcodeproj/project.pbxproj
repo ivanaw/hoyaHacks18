@@ -7,70 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C30C4317201CBBCC001B34E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4316201CBBCC001B34E5 /* AppDelegate.swift */; };
-		C30C4319201CBBCC001B34E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4318201CBBCC001B34E5 /* ViewController.swift */; };
-		C30C431C201CBBCC001B34E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30C431A201CBBCC001B34E5 /* Main.storyboard */; };
-		C30C431E201CBBCC001B34E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30C431D201CBBCC001B34E5 /* Assets.xcassets */; };
-		C30C4321201CBBCC001B34E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30C431F201CBBCC001B34E5 /* LaunchScreen.storyboard */; };
-		C30C432C201CBBCC001B34E5 /* HoyaHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C432B201CBBCC001B34E5 /* HoyaHacksTests.swift */; };
-		C30C4337201CBBCD001B34E5 /* HoyaHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4336201CBBCD001B34E5 /* HoyaHacksUITests.swift */; };
-		C35375F6201D45F1008A03A4 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35375F4201D41F1008A03A4 /* ARViewController.swift */; };
-		C3537601201D52AC008A03A4 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */; };
-		C3AD7AFC201CEE81006B9D0B /* GCVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */; };
+		AEC748F51F18C24700334D87 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */; };
+		AEEC85651F18B8C600D43B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC85641F18B8C600D43B9B /* AppDelegate.swift */; };
+		AEEC85671F18B8C600D43B9B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEC85661F18B8C600D43B9B /* art.scnassets */; };
+		AEEC85691F18B8C600D43B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC85681F18B8C600D43B9B /* ViewController.swift */; };
+		AEEC856C1F18B8C600D43B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856A1F18B8C600D43B9B /* Main.storyboard */; };
+		AEEC856E1F18B8C600D43B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856D1F18B8C600D43B9B /* Assets.xcassets */; };
+		AEEC85711F18B8C600D43B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856F1F18B8C600D43B9B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C30C4328201CBBCC001B34E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C30C430B201CBBCC001B34E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C30C4312201CBBCC001B34E5;
-			remoteInfo = HoyaHacks;
-		};
-		C30C4333201CBBCD001B34E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C30C430B201CBBCC001B34E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C30C4312201CBBCC001B34E5;
-			remoteInfo = HoyaHacks;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		C30C4313201CBBCC001B34E5 /* HoyaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoyaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30C4316201CBBCC001B34E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C30C4318201CBBCC001B34E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C30C431B201CBBCC001B34E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C30C431D201CBBCC001B34E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C30C4320201CBBCC001B34E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C30C4322201CBBCC001B34E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C30C4327201CBBCC001B34E5 /* HoyaHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoyaHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30C432B201CBBCC001B34E5 /* HoyaHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoyaHacksTests.swift; sourceTree = "<group>"; };
-		C30C432D201CBBCC001B34E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C30C4332201CBBCD001B34E5 /* HoyaHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoyaHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30C4336201CBBCD001B34E5 /* HoyaHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoyaHacksUITests.swift; sourceTree = "<group>"; };
-		C30C4338201CBBCD001B34E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C35375F4201D41F1008A03A4 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../Downloads/CoreML-in-ARKit-master/CoreML in ARKit/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
-		C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCVManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		AEEC85611F18B8C600D43B9B /* hoyaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoyaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEC85641F18B8C600D43B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEEC85661F18B8C600D43B9B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		AEEC85681F18B8C600D43B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEEC856B1F18B8C600D43B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEEC856D1F18B8C600D43B9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEEC85701F18B8C600D43B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEEC85721F18B8C600D43B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C30C4310201CBBCC001B34E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C4324201CBBCC001B34E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C432F201CBBCD001B34E5 /* Frameworks */ = {
+		AEEC855E1F18B8C600D43B9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,151 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C30C430A201CBBCC001B34E5 = {
+		AEEC85581F18B8C600D43B9B = {
 			isa = PBXGroup;
 			children = (
-				C3AD7AFA201CEE56006B9D0B /* Managers */,
-				C30C4315201CBBCC001B34E5 /* HoyaHacks */,
-				C30C432A201CBBCC001B34E5 /* HoyaHacksTests */,
-				C30C4335201CBBCD001B34E5 /* HoyaHacksUITests */,
-				C30C4314201CBBCC001B34E5 /* Products */,
+				AEEC85631F18B8C600D43B9B /* hoyaHacks */,
+				AEEC85621F18B8C600D43B9B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C30C4314201CBBCC001B34E5 /* Products */ = {
+		AEEC85621F18B8C600D43B9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C30C4313201CBBCC001B34E5 /* HoyaHacks.app */,
-				C30C4327201CBBCC001B34E5 /* HoyaHacksTests.xctest */,
-				C30C4332201CBBCD001B34E5 /* HoyaHacksUITests.xctest */,
+				AEEC85611F18B8C600D43B9B /* hoyaHacks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C30C4315201CBBCC001B34E5 /* HoyaHacks */ = {
+		AEEC85631F18B8C600D43B9B /* hoyaHacks */ = {
 			isa = PBXGroup;
 			children = (
-				C30C4316201CBBCC001B34E5 /* AppDelegate.swift */,
-				C30C4318201CBBCC001B34E5 /* ViewController.swift */,
-				C35375F4201D41F1008A03A4 /* ARViewController.swift */,
-				C30C431A201CBBCC001B34E5 /* Main.storyboard */,
-				C30C431D201CBBCC001B34E5 /* Assets.xcassets */,
-				C30C431F201CBBCC001B34E5 /* LaunchScreen.storyboard */,
-				C30C4322201CBBCC001B34E5 /* Info.plist */,
-				C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */,
+				AEEC85641F18B8C600D43B9B /* AppDelegate.swift */,
+				AEEC85661F18B8C600D43B9B /* art.scnassets */,
+				AEEC85681F18B8C600D43B9B /* ViewController.swift */,
+				AEEC856A1F18B8C600D43B9B /* Main.storyboard */,
+				AEEC856D1F18B8C600D43B9B /* Assets.xcassets */,
+				AEEC856F1F18B8C600D43B9B /* LaunchScreen.storyboard */,
+				AEEC85721F18B8C600D43B9B /* Info.plist */,
+				AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */,
 			);
-			path = HoyaHacks;
-			sourceTree = "<group>";
-		};
-		C30C432A201CBBCC001B34E5 /* HoyaHacksTests */ = {
-			isa = PBXGroup;
-			children = (
-				C30C432B201CBBCC001B34E5 /* HoyaHacksTests.swift */,
-				C30C432D201CBBCC001B34E5 /* Info.plist */,
-			);
-			path = HoyaHacksTests;
-			sourceTree = "<group>";
-		};
-		C30C4335201CBBCD001B34E5 /* HoyaHacksUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C30C4336201CBBCD001B34E5 /* HoyaHacksUITests.swift */,
-				C30C4338201CBBCD001B34E5 /* Info.plist */,
-			);
-			path = HoyaHacksUITests;
-			sourceTree = "<group>";
-		};
-		C3AD7AFA201CEE56006B9D0B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */,
-			);
-			name = Managers;
+			path = hoyaHacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C30C4312201CBBCC001B34E5 /* HoyaHacks */ = {
+		AEEC85601F18B8C600D43B9B /* hoyaHacks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C30C433B201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacks" */;
+			buildConfigurationList = AEEC85751F18B8C600D43B9B /* Build configuration list for PBXNativeTarget "hoyaHacks" */;
 			buildPhases = (
-				C30C430F201CBBCC001B34E5 /* Sources */,
-				C30C4310201CBBCC001B34E5 /* Frameworks */,
-				C30C4311201CBBCC001B34E5 /* Resources */,
+				AEEC855D1F18B8C600D43B9B /* Sources */,
+				AEEC855E1F18B8C600D43B9B /* Frameworks */,
+				AEEC855F1F18B8C600D43B9B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HoyaHacks;
-			productName = HoyaHacks;
-			productReference = C30C4313201CBBCC001B34E5 /* HoyaHacks.app */;
+			name = hoyaHacks;
+			productName = "CoreML in ARKit";
+			productReference = AEEC85611F18B8C600D43B9B /* hoyaHacks.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C30C4326201CBBCC001B34E5 /* HoyaHacksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C30C433E201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacksTests" */;
-			buildPhases = (
-				C30C4323201CBBCC001B34E5 /* Sources */,
-				C30C4324201CBBCC001B34E5 /* Frameworks */,
-				C30C4325201CBBCC001B34E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C30C4329201CBBCC001B34E5 /* PBXTargetDependency */,
-			);
-			name = HoyaHacksTests;
-			productName = HoyaHacksTests;
-			productReference = C30C4327201CBBCC001B34E5 /* HoyaHacksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C30C4331201CBBCD001B34E5 /* HoyaHacksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C30C4341201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacksUITests" */;
-			buildPhases = (
-				C30C432E201CBBCD001B34E5 /* Sources */,
-				C30C432F201CBBCD001B34E5 /* Frameworks */,
-				C30C4330201CBBCD001B34E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C30C4334201CBBCD001B34E5 /* PBXTargetDependency */,
-			);
-			name = HoyaHacksUITests;
-			productName = HoyaHacksUITests;
-			productReference = C30C4332201CBBCD001B34E5 /* HoyaHacksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C30C430B201CBBCC001B34E5 /* Project object */ = {
+		AEEC85591F18B8C600D43B9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Ivana Fitriani";
+				ORGANIZATIONNAME = CompanyName;
 				TargetAttributes = {
-					C30C4312201CBBCC001B34E5 = {
+					AEEC85601F18B8C600D43B9B = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
-					C30C4326201CBBCC001B34E5 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C30C4312201CBBCC001B34E5;
-					};
-					C30C4331201CBBCD001B34E5 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C30C4312201CBBCC001B34E5;
 					};
 				};
 			};
-			buildConfigurationList = C30C430E201CBBCC001B34E5 /* Build configuration list for PBXProject "HoyaHacks" */;
+			buildConfigurationList = AEEC855C1F18B8C600D43B9B /* Build configuration list for PBXProject "hoyaHacks" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,102 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = C30C430A201CBBCC001B34E5;
-			productRefGroup = C30C4314201CBBCC001B34E5 /* Products */;
+			mainGroup = AEEC85581F18B8C600D43B9B;
+			productRefGroup = AEEC85621F18B8C600D43B9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C30C4312201CBBCC001B34E5 /* HoyaHacks */,
-				C30C4326201CBBCC001B34E5 /* HoyaHacksTests */,
-				C30C4331201CBBCD001B34E5 /* HoyaHacksUITests */,
+				AEEC85601F18B8C600D43B9B /* hoyaHacks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C30C4311201CBBCC001B34E5 /* Resources */ = {
+		AEEC855F1F18B8C600D43B9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30C4321201CBBCC001B34E5 /* LaunchScreen.storyboard in Resources */,
-				C30C431E201CBBCC001B34E5 /* Assets.xcassets in Resources */,
-				C30C431C201CBBCC001B34E5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C4325201CBBCC001B34E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C4330201CBBCD001B34E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AEEC85671F18B8C600D43B9B /* art.scnassets in Resources */,
+				AEEC85711F18B8C600D43B9B /* LaunchScreen.storyboard in Resources */,
+				AEEC856E1F18B8C600D43B9B /* Assets.xcassets in Resources */,
+				AEEC856C1F18B8C600D43B9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C30C430F201CBBCC001B34E5 /* Sources */ = {
+		AEEC855D1F18B8C600D43B9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3537601201D52AC008A03A4 /* Inceptionv3.mlmodel in Sources */,
-				C3AD7AFC201CEE81006B9D0B /* GCVManager.swift in Sources */,
-				C30C4319201CBBCC001B34E5 /* ViewController.swift in Sources */,
-				C30C4317201CBBCC001B34E5 /* AppDelegate.swift in Sources */,
-				C35375F6201D45F1008A03A4 /* ARViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C4323201CBBCC001B34E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C30C432C201CBBCC001B34E5 /* HoyaHacksTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30C432E201CBBCD001B34E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C30C4337201CBBCD001B34E5 /* HoyaHacksUITests.swift in Sources */,
+				AEEC85691F18B8C600D43B9B /* ViewController.swift in Sources */,
+				AEC748F51F18C24700334D87 /* Inceptionv3.mlmodel in Sources */,
+				AEEC85651F18B8C600D43B9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C30C4329201CBBCC001B34E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C30C4312201CBBCC001B34E5 /* HoyaHacks */;
-			targetProxy = C30C4328201CBBCC001B34E5 /* PBXContainerItemProxy */;
-		};
-		C30C4334201CBBCD001B34E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C30C4312201CBBCC001B34E5 /* HoyaHacks */;
-			targetProxy = C30C4333201CBBCD001B34E5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		C30C431A201CBBCC001B34E5 /* Main.storyboard */ = {
+		AEEC856A1F18B8C600D43B9B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C30C431B201CBBCC001B34E5 /* Base */,
+				AEEC856B1F18B8C600D43B9B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C30C431F201CBBCC001B34E5 /* LaunchScreen.storyboard */ = {
+		AEEC856F1F18B8C600D43B9B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C30C4320201CBBCC001B34E5 /* Base */,
+				AEEC85701F18B8C600D43B9B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -335,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C30C4339201CBBCD001B34E5 /* Debug */ = {
+		AEEC85731F18B8C600D43B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		C30C433A201CBBCD001B34E5 /* Release */ = {
+		AEEC85741F18B8C600D43B9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,138 +277,56 @@
 			};
 			name = Release;
 		};
-		C30C433C201CBBCD001B34E5 /* Debug */ = {
+		AEEC85761F18B8C600D43B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K7F8WRKB9;
-				INFOPLIST_FILE = HoyaHacks/Info.plist;
+				INFOPLIST_FILE = "CoreML in ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.CoreML-in-ARKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C30C433D201CBBCD001B34E5 /* Release */ = {
+		AEEC85771F18B8C600D43B9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K7F8WRKB9;
-				INFOPLIST_FILE = HoyaHacks/Info.plist;
+				INFOPLIST_FILE = "CoreML in ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.CoreML-in-ARKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C30C433F201CBBCD001B34E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoyaHacksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoyaHacks.app/HoyaHacks";
-			};
-			name = Debug;
-		};
-		C30C4340201CBBCD001B34E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoyaHacksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoyaHacks.app/HoyaHacks";
-			};
-			name = Release;
-		};
-		C30C4342201CBBCD001B34E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoyaHacksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoyaHacks;
-			};
-			name = Debug;
-		};
-		C30C4343201CBBCD001B34E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoyaHacksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ivana.HoyaHacksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoyaHacks;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C30C430E201CBBCC001B34E5 /* Build configuration list for PBXProject "HoyaHacks" */ = {
+		AEEC855C1F18B8C600D43B9B /* Build configuration list for PBXProject "hoyaHacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C30C4339201CBBCD001B34E5 /* Debug */,
-				C30C433A201CBBCD001B34E5 /* Release */,
+				AEEC85731F18B8C600D43B9B /* Debug */,
+				AEEC85741F18B8C600D43B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C30C433B201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacks" */ = {
+		AEEC85751F18B8C600D43B9B /* Build configuration list for PBXNativeTarget "hoyaHacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C30C433C201CBBCD001B34E5 /* Debug */,
-				C30C433D201CBBCD001B34E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C30C433E201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C30C433F201CBBCD001B34E5 /* Debug */,
-				C30C4340201CBBCD001B34E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C30C4341201CBBCD001B34E5 /* Build configuration list for PBXNativeTarget "HoyaHacksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C30C4342201CBBCD001B34E5 /* Debug */,
-				C30C4343201CBBCD001B34E5 /* Release */,
+				AEEC85761F18B8C600D43B9B /* Debug */,
+				AEEC85771F18B8C600D43B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C30C430B201CBBCC001B34E5 /* Project object */;
+	rootObject = AEEC85591F18B8C600D43B9B /* Project object */;
 }
