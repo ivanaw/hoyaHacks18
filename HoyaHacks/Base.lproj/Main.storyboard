@@ -34,7 +34,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtd-it-5Rk">
                                 <rect key="frame" x="146" y="514" width="83" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" image="icon-camera"/>
                                 <connections>
@@ -52,27 +52,58 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calories" destination="oZI-gu-v3E" id="Sl6-pS-BL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--AR View Controller-->
         <scene sceneID="usH-Ka-AS4">
             <objects>
-                <viewController id="byQ-OW-7o5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2An-kd-Rmu">
+                <viewController title="AR View Controller" id="byQ-OW-7o5" customClass="ARViewController" customModule="HoyaHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMH-LP-1rV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZU-R4-fTU">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBl-pv-Eoh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="Lwu-8x-lXu">
+                                <rect key="frame" x="168" y="314" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Cwu-ow-a1E"/>
+                                    <constraint firstAttribute="height" constant="40" id="e8G-e8-Fmh"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-Lb-83c">
+                                <rect key="frame" x="138" y="284" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Gyx-pH-SCT"/>
+                                    <constraint firstAttribute="width" constant="100" id="zhc-hS-qqm"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="7Jg-EK-a1P"/>
+                        <constraints>
+                            <constraint firstItem="Lwu-8x-lXu" firstAttribute="centerX" secondItem="tBl-pv-Eoh" secondAttribute="centerX" id="4UJ-9C-uGG"/>
+                            <constraint firstItem="TTe-Lb-83c" firstAttribute="centerY" secondItem="OMH-LP-1rV" secondAttribute="centerY" id="502-b4-fqr"/>
+                            <constraint firstItem="Lwu-8x-lXu" firstAttribute="centerY" secondItem="tBl-pv-Eoh" secondAttribute="centerY" id="BsG-Km-SWu"/>
+                            <constraint firstItem="TTe-Lb-83c" firstAttribute="centerX" secondItem="OMH-LP-1rV" secondAttribute="centerX" id="JdX-zz-bbX"/>
+                            <constraint firstItem="tBl-pv-Eoh" firstAttribute="centerX" secondItem="OMH-LP-1rV" secondAttribute="centerX" id="b3E-1m-mup"/>
+                            <constraint firstItem="tBl-pv-Eoh" firstAttribute="centerY" secondItem="OMH-LP-1rV" secondAttribute="centerY" id="gkE-4b-zV9"/>
+                            <constraint firstItem="tBl-pv-Eoh" firstAttribute="height" secondItem="OMH-LP-1rV" secondAttribute="height" id="kcs-Kw-7ab"/>
+                            <constraint firstItem="tBl-pv-Eoh" firstAttribute="width" secondItem="OMH-LP-1rV" secondAttribute="width" id="zP3-sp-ogW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VMT-j4-HLT"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TTe-Lb-83c" id="l8t-T4-p38"/>
+                        <outlet property="sceneView" destination="tBl-pv-Eoh" id="IBh-6X-4Jy"/>
+                        <outlet property="targetButton" destination="TTe-Lb-83c" id="0ga-j2-sTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyT-FP-wZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,5 +112,6 @@
     </scenes>
     <resources>
         <image name="icon-camera" width="30" height="30"/>
+        <image name="plus" width="100" height="100"/>
     </resources>
 </document>

@@ -14,8 +14,9 @@
 		C30C4321201CBBCC001B34E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30C431F201CBBCC001B34E5 /* LaunchScreen.storyboard */; };
 		C30C432C201CBBCC001B34E5 /* HoyaHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C432B201CBBCC001B34E5 /* HoyaHacksTests.swift */; };
 		C30C4337201CBBCD001B34E5 /* HoyaHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4336201CBBCD001B34E5 /* HoyaHacksUITests.swift */; };
+		C35375F6201D45F1008A03A4 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35375F4201D41F1008A03A4 /* ARViewController.swift */; };
+		C3537601201D52AC008A03A4 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */; };
 		C3AD7AFC201CEE81006B9D0B /* GCVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */; };
-		C3AD7B02201D001E006B9D0B /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD7B01201D001E006B9D0B /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,9 @@
 		C30C4332201CBBCD001B34E5 /* HoyaHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoyaHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30C4336201CBBCD001B34E5 /* HoyaHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoyaHacksUITests.swift; sourceTree = "<group>"; };
 		C30C4338201CBBCD001B34E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35375F4201D41F1008A03A4 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../Downloads/CoreML-in-ARKit-master/CoreML in ARKit/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
 		C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCVManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		C3AD7B01201D001E006B9D0B /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = "../../Downloads/KDCircularProgress-master/KDCircularProgress/KDCircularProgress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,12 @@
 			children = (
 				C30C4316201CBBCC001B34E5 /* AppDelegate.swift */,
 				C30C4318201CBBCC001B34E5 /* ViewController.swift */,
+				C35375F4201D41F1008A03A4 /* ARViewController.swift */,
 				C30C431A201CBBCC001B34E5 /* Main.storyboard */,
 				C30C431D201CBBCC001B34E5 /* Assets.xcassets */,
 				C30C431F201CBBCC001B34E5 /* LaunchScreen.storyboard */,
 				C30C4322201CBBCC001B34E5 /* Info.plist */,
+				C35375FE201D5252008A03A4 /* Inceptionv3.mlmodel */,
 			);
 			path = HoyaHacks;
 			sourceTree = "<group>";
@@ -133,7 +137,6 @@
 		C3AD7AFA201CEE56006B9D0B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C3AD7B01201D001E006B9D0B /* KDCircularProgress.swift */,
 				C3AD7AFB201CEE81006B9D0B /* GCVManager.swift */,
 			);
 			name = Managers;
@@ -273,10 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3AD7B02201D001E006B9D0B /* KDCircularProgress.swift in Sources */,
+				C3537601201D52AC008A03A4 /* Inceptionv3.mlmodel in Sources */,
 				C3AD7AFC201CEE81006B9D0B /* GCVManager.swift in Sources */,
 				C30C4319201CBBCC001B34E5 /* ViewController.swift in Sources */,
 				C30C4317201CBBCC001B34E5 /* AppDelegate.swift in Sources */,
+				C35375F6201D45F1008A03A4 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
