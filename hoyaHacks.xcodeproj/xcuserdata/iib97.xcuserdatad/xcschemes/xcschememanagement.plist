@@ -9,10 +9,13 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>hoyaHacks.xcscheme</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AEEC85601F18B8C600D43B9B</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

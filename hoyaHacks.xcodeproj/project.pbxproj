@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEC748F51F18C24700334D87 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */; };
 		AEEC85651F18B8C600D43B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC85641F18B8C600D43B9B /* AppDelegate.swift */; };
 		AEEC85671F18B8C600D43B9B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEC85661F18B8C600D43B9B /* art.scnassets */; };
-		AEEC85691F18B8C600D43B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC85681F18B8C600D43B9B /* ViewController.swift */; };
+		AEEC85691F18B8C600D43B9B /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC85681F18B8C600D43B9B /* ARViewController.swift */; };
 		AEEC856C1F18B8C600D43B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856A1F18B8C600D43B9B /* Main.storyboard */; };
 		AEEC856E1F18B8C600D43B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856D1F18B8C600D43B9B /* Assets.xcassets */; };
 		AEEC85711F18B8C600D43B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEC856F1F18B8C600D43B9B /* LaunchScreen.storyboard */; };
+		C3537607201D57FD008A03A4 /* InceptionV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3537606201D57FD008A03A4 /* InceptionV3.mlmodel */; };
+		C3537609201D5EE0008A03A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537608201D5EE0008A03A4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		AEEC85611F18B8C600D43B9B /* hoyaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoyaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEC85641F18B8C600D43B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEC85661F18B8C600D43B9B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		AEEC85681F18B8C600D43B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEEC85681F18B8C600D43B9B /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		AEEC856B1F18B8C600D43B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEEC856D1F18B8C600D43B9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEEC85701F18B8C600D43B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEEC85721F18B8C600D43B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3537606201D57FD008A03A4 /* InceptionV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = InceptionV3.mlmodel; path = "../../CoreML-in-ARKit-master/CoreML in ARKit/InceptionV3.mlmodel"; sourceTree = "<group>"; };
+		C3537608201D5EE0008A03A4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				AEEC85641F18B8C600D43B9B /* AppDelegate.swift */,
 				AEEC85661F18B8C600D43B9B /* art.scnassets */,
-				AEEC85681F18B8C600D43B9B /* ViewController.swift */,
+				AEEC85681F18B8C600D43B9B /* ARViewController.swift */,
+				C3537608201D5EE0008A03A4 /* MainViewController.swift */,
 				AEEC856A1F18B8C600D43B9B /* Main.storyboard */,
 				AEEC856D1F18B8C600D43B9B /* Assets.xcassets */,
 				AEEC856F1F18B8C600D43B9B /* LaunchScreen.storyboard */,
 				AEEC85721F18B8C600D43B9B /* Info.plist */,
-				AEC748F41F18C24700334D87 /* Inceptionv3.mlmodel */,
+				C3537606201D57FD008A03A4 /* InceptionV3.mlmodel */,
 			);
 			path = hoyaHacks;
 			sourceTree = "<group>";
@@ -142,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEEC85691F18B8C600D43B9B /* ViewController.swift in Sources */,
-				AEC748F51F18C24700334D87 /* Inceptionv3.mlmodel in Sources */,
+				AEEC85691F18B8C600D43B9B /* ARViewController.swift in Sources */,
+				C3537607201D57FD008A03A4 /* InceptionV3.mlmodel in Sources */,
 				AEEC85651F18B8C600D43B9B /* AppDelegate.swift in Sources */,
+				C3537609201D5EE0008A03A4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +288,7 @@
 				DEVELOPMENT_TEAM = 6K7F8WRKB9;
 				INFOPLIST_FILE = "CoreML in ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.CoreML-in-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = ivana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,7 +302,7 @@
 				DEVELOPMENT_TEAM = 6K7F8WRKB9;
 				INFOPLIST_FILE = "CoreML in ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.CoreML-in-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = ivana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
